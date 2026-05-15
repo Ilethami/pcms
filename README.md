@@ -5,5 +5,10 @@
 *Italic*
 **Bold**
 ***Italic bold***
-` Single line code`
-``` Multiline code```
+` 
+Single line code
+`
+```
+Multiline code
+```
+
