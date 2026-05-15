@@ -2,6 +2,8 @@
 ## Heading 2
 ### Heading 3
 
-*Bold*
-**Italic**
-***Italic bold**
+*Italic*
+**Bold**
+***Italic bold***
+` Single line code`
+``` Multiline code```
