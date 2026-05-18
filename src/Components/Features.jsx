@@ -21,7 +21,7 @@ export default function Features() {
           Everything you need to run your facility
         </p>
 
-        <p className="text-[#5B5B5B] font-['Castoro'] text-[18px] font-normal leading-[40px] max-w-[500px] text-center">
+        <p className="text-[#55A078] font-['Castoro'] text-[18px] font-normal leading-[40px] max-w-[500px] text-center">
           Powerful tools to save time, increase bookings and deliver a
           better experience for your members
         </p>
