@@ -18,7 +18,7 @@ export default function Hero() {
         data-aos="fade-up"
         className="w-flex h-fit flex flex-col items-center py-20 "
       >
-        <div className=" bg-pcms w-fit h-fit py-16 rounded-[100px] px-6 mx-6 shadow-[0px_16px_10px_8px_rgba(0,0,0,0.35)]">
+        <div className=" bg-pcms w-fit h-fit py-16 rounded-[100px] px-6 mx-6 shadow-[0px_16px_10px_8px_rgba(0,0,0,0.35)] ">
           <div
             data-aos="fade-up"
             className="flex flex-col gap-5 items-center"
@@ -31,7 +31,7 @@ export default function Hero() {
           <div
             data-aos="fade-up"
             data-aos-delay="300"
-            className="flex flex-row items-center content-end pt-10"
+            className="flex flex-wrap justify-center items-center content-end pt-10 gap-y-5"
           >
             <InText
               title={"SIGN UP AND BROWSE"}
