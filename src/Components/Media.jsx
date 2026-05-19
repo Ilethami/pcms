@@ -32,7 +32,7 @@ export default function Media() {
         </div>
 
         {/* Tablet */}
-        <div className="-translate-x-1/3 translate-y-[50px]">
+        <div className="-translate-x-1/3 translate-y-[35px]">
           <Image image={tabimg} width="550px" height="370px" />
         </div>
       </div>

@@ -86,8 +86,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex pl-[20px] items-start gap-[-50px] self-stretch  justify-self-stretch">
-            <div className="pt-[50px] items-center flex gap-2.5">
+          <div className="flex-row flex">
+            <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -137,18 +137,22 @@ export default function Footer() {
                 />
               </svg>
             </div>
-            <div className="flex items-center gap-[-20px] flex-1 w-[362px] h-[200px]">
-              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px]">
-                <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-bold leading-[40px]">
-                  CONTACT
-                </span>
-                <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] underline">
+            <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-[362px] h-[200px]">
+              <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-bold leading-[40px]">
+                CONTACT
+              </span>
+              <br />
+              <div className="pl-5">
+                Bonifacio Street, near UIC School <br />
+                +63 912 345 6789
+                <br />
+                <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] underline ">
                   support@picklecourt.com
                 </span>
-                Bonifacio Street, near UIC School +63 912 345 6789 Mon
-                – Sun | 8:00 AM – 10:00 PM
-              </p>
-            </div>
+                <br />
+                Mon – Sun | 8:00 AM – 10:00 PM
+              </div>
+            </p>
           </div>
         </div>
       </div>
