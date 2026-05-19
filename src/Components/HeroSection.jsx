@@ -1,8 +1,16 @@
 import heroimg from "../assets/hdimg.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image */}
@@ -50,7 +58,7 @@ export default function Hero() {
         </div>
 
         <button
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen(!menuOpen)} 
           className="flex flex-col md:hidden cursor-pointer gap-1"
         >
           <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
@@ -58,12 +66,21 @@ export default function Hero() {
           <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
         </button>
 
-        <ul className={`
-            absolute top-[80px] right-0 w-full bg-pcms
-            flex-col items-center gap-4 py-4
-            md:hidden
-            ${menuOpen ? "flex" : "hidden"}
-          `}>
+        <ul
+            className={`
+              absolute top-[80px] right-0 w-full bg-pcms
+              flex flex-col items-center gap-4
+              overflow-hidden
+              transition-all duration-300 ease-in-out
+              md:hidden
+
+              ${
+                menuOpen
+                  ? "max-h-[300px] opacity-100 py-4"
+                  : "max-h-0 opacity-0 py-0"
+              }
+            `}
+          >
           <li><a href="#" className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold">Login</a></li>
           <li><a href="#" className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold">Sign Up</a></li>
         </ul>
@@ -72,7 +89,7 @@ export default function Hero() {
       {/* HERO TEXT */}
       <div className="absolute inset-0 flex items-center">
         <div className="ml-4 sm:ml-10 md:ml-[65px] max-w-[90%] sm:max-w-[600px] md:max-w-[847px] flex flex-col gap-6 sm:gap-10 md:gap-[43px] z-10">
-          <h1 className="text-[#FFFEFC] font-['Poppins'] text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]">
+          <h1 data-aos="fade-up" className="text-[#FFFEFC] font-['Poppins'] text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]">
             Manage Pickleball Courts Easily and Efficiently
           </h1>
 
