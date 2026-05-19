@@ -7,9 +7,11 @@ export default function Landing() {
   return (
     <>
       <Hero />
-      <Features />
-      <Instructions />
-      <Media />
+      <div className="flex flex-col">
+        <Features />
+        <Instructions />
+        <Media />
+      </div>
     </>
   );
 }

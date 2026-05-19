@@ -36,11 +36,24 @@ export default function Hero() {
 
         {/* RIGHT SIDE BUTTONS */}
         <div className="flex gap-2 sm:gap-3 md:gap-4">
-          <button className="rounded-[36px] border-[3px] border-[#67C090] bg-white shadow-md text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]">
+          <button
+            className="rounded-[36px] border-[3px] border-[#67C090] bg-white text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]
+  shadow-md transition-all duration-200
+  hover:border-white hover:bg-[#67C090] hover:text-white hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] hover:cursor-pointer"
+          >
             Register
           </button>
 
-          <button className="rounded-[36px] border-[3px] border-[#FFFEFC] bg-[#67C090] shadow-md text-white text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]">
+          <button
+            className="rounded-[36px] border-[3px] border-[#FFFEFC] bg-[#67C090] text-white
+  text-[14px] sm:text-[16px] md:text-[20px]
+  w-[90px] sm:w-[105px] md:w-[120px]
+  h-[36px] sm:h-[40px] md:h-[44px]
+  shadow-md transition-all duration-200
+
+   hover:border-[#67C090] hover:bg-white hover:text-[#67C090]
+  hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] hover:cursor-pointer"
+          >
             Login
           </button>
         </div>
