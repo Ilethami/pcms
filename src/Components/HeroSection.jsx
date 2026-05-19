@@ -85,7 +85,7 @@ export default function Hero() {
             <a
               href="#"
               className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
-    px-4 py-2 rounded-full hover:bg-[#dcefd7,] transition-all duration-300"
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
             >
               Login
             </a>
