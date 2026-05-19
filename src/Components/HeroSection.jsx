@@ -39,7 +39,7 @@ export default function Hero() {
           <button
             className="rounded-[36px] border-[3px] border-[#67C090] bg-white text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]
   shadow-md transition-all duration-200
-  hover:border-white hover:bg-[#67C090] hover:text-white hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] hover:cursor-pointer"
+  hover:border-white hover:bg-[#67C090] hover:text-white hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
           >
             Register
           </button>
@@ -52,7 +52,7 @@ export default function Hero() {
   shadow-md transition-all duration-200
 
    hover:border-[#67C090] hover:bg-white hover:text-[#67C090]
-  hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] hover:cursor-pointer"
+  hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
           >
             Login
           </button>
