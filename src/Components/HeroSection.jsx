@@ -81,10 +81,28 @@ export default function Hero() {
               }
             `}
           >
-          <li><a href="#" className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold">Login</a></li>
-          <li><a href="#" className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold">Sign Up</a></li>
-        </ul>
+         <li>
+  <a
+    href="#"
+    className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
+  >
+    Login
+  </a>
+</li>
+
+<li>
+  <a
+    href="#"
+    className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
+  >
+    Sign Up
+  </a>
+</li>
+          </ul>
       </nav>
+
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 flex items-center">
