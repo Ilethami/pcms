@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       {/* GRID SECTION */}
-      <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[45px] gap-x-[60px] mt-10 px-[20px] md:px-[70px] h-[680px] max-w-[1452px] w-full">
+      <div data-aos="fade-up" data-aos-delay="300" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[45px] gap-x-[60px] mt-10 px-[20px] md:px-[70px] h-[680px] max-w-[1452px] w-full">
         <Card
           icon={book}
           title="Smart Booking System"
