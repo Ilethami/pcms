@@ -81,7 +81,7 @@ export default function Hero() {
               }
             `}
           >
-         <li>
+          <li>
   <a
     href="#"
     className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
@@ -100,9 +100,8 @@ export default function Hero() {
     Sign Up
   </a>
 </li>
-          </ul>
+</ul>
       </nav>
-
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 flex items-center">
