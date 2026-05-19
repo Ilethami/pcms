@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image */}
-      <img
+      <img 
         src={heroimg}
         alt="Hero"
         className="w-full h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] object-cover block"
@@ -48,11 +48,11 @@ export default function Hero() {
 
         {/* RIGHT SIDE BUTTONS */}
         <div className=" hidden md:flex gap-2 sm:gap-3 md:gap-4">
-          <button className="rounded-[36px] border-[3px] border-[#67C090] bg-white shadow-md text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]">
+          <button className="rounded-[36px] border-[3px] border-[#67C090] hover:border-white hover:bg-[#4ea977] hover:text-white bg-white shadow-md text-[#67C090] transition-colors duration-300 text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
             Register
           </button>
 
-          <button className="rounded-[36px] border-[3px] border-[#FFFEFC] bg-[#67C090] shadow-md text-white text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]">
+          <button className="rounded-[36px] border-[3px] border-[#FFFEFC] hover:border-[#4ea977] hover:bg-white hover:text-[#4ea977] bg-[#67C090] transition-colors duration-300 shadow-md text-white text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
             Login
           </button>
         </div>
@@ -116,7 +116,7 @@ export default function Hero() {
           </p>
 
           {/* BUTTON WITH ARROW SVG */}
-          <button className="flex items-center justify-between w-[160px] sm:w-[180px] md:w-[204px] h-[44px] sm:h-[48px] md:h-[51px] px-[20px] sm:px-[24px] md:px-[28px] rounded-full bg-[#67C090] border border-black/20 shadow-md">
+          <button className="flex items-center justify-between w-[160px] sm:w-[180px] md:w-[204px] h-[44px] sm:h-[48px] md:h-[51px] px-[20px] sm:px-[24px] md:px-[28px] rounded-full bg-[#67C090] border border-black/20 shadow-md hover:scale-106 hover:translate-y-[-2px] transition-transform duration-300 hover:bg-[#4ea977]">
             <span className="text-white text-[14px] sm:text-[16px] md:text-[20px] font-['Poppins] font-regular">
               Learn More
             </span>
