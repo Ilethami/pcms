@@ -1,4 +1,4 @@
-import bell from "../icons/bell.svg";
+import bell from "../icons/Bell.svg";
 import person from "../icons/Person.svg";
 import book from "../icons/Booking.svg";
 import calendar from "../icons/Calendar.svg";
