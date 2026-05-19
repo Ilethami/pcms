@@ -1,6 +1,8 @@
 import heroimg from "../assets/hdimg.png";
+import { useState } from "react";
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image */}
@@ -15,6 +17,7 @@ export default function Hero() {
         {/* LEFT SIDE */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* LOGO SVG (your original) */}
+          <a href="/" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -28,6 +31,7 @@ export default function Hero() {
               fill="#215B63"
             />
           </svg>
+          </a>
 
           <p className="text-[#1F6F5F] font-['Poppins'] text-[18px] sm:text-[22px] md:text-[26px] font-semibold">
             PickleCourt
@@ -35,7 +39,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT SIDE BUTTONS */}
-        <div className="flex gap-2 sm:gap-3 md:gap-4">
+        <div className=" hidden md:flex gap-2 sm:gap-3 md:gap-4">
           <button className="rounded-[36px] border-[3px] border-[#67C090] bg-white shadow-md text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]">
             Register
           </button>
@@ -44,6 +48,25 @@ export default function Hero() {
             Login
           </button>
         </div>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="flex flex-col md:hidden cursor-pointer gap-1"
+        >
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+        </button>
+
+        <ul className={`
+            absolute top-[80px] right-0 w-full bg-pcms
+            flex-col items-center gap-4 py-4
+            md:hidden
+            ${menuOpen ? "flex" : "hidden"}
+          `}>
+          <li><a href="#" className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold">Login</a></li>
+          <li><a href="#" className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold">Sign Up</a></li>
+        </ul>
       </nav>
 
       {/* HERO TEXT */}

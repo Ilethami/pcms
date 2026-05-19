@@ -4,7 +4,7 @@ import InText from "./InsText";
 export default function Instructions() {
   return (
     <>
-      <div className="w-full h-fit flex flex-col items-center py-20 ">
+      <div className="w-flex h-fit flex flex-col items-center py-20 ">
         <div className=" bg-pcms w-fit h-fit py-16 rounded-[100px] px-6 mx-6 shadow-[0px_16px_10px_8px_rgba(0,0,0,0.35)]">
           <div className="flex flex-col gap-5 items-center">
             <p className="text-[#215B63] font-['Castoro'] text-[30px] font-normal leading-[40px]">
