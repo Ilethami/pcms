@@ -25,16 +25,14 @@ export default function Hero() {
       {/* HEADER */}
       <div className="flex flex-col justify-center items-center gap-4 py-7">
         <div className="flex items-center justify-center w-fit h-fit rounded-[20px] bg-[#BCEAB7] px-6 py-2.5">
-          <p
-            data-aos="fade-up"
-            className="text-[#215B63] text-[20px] font-bold font-['Bona-Nova']"
-          >
+          <p className="text-[#215B63] text-[20px] font-bold font-['Bona-Nova']">
             Features
           </p>
         </div>
 
         <p
           data-aos="fade-up"
+          data-aos-delay="300"
           className="text-[#215B63] font-['Castoro'] text-[34px] font-normal leading-[40px] text-center"
         >
           Everything you need to run your facility
@@ -42,6 +40,7 @@ export default function Hero() {
 
         <p
           data-aos="fade-up"
+          data-aos-delay="600"
           className="text-[#55A078] font-['Castoro'] text-[18px] font-normal leading-[40px] max-w-[500px] text-center"
         >
           Powerful tools to save time, increase bookings and deliver a
@@ -52,8 +51,8 @@ export default function Hero() {
       {/* GRID SECTION */}
       <div
         data-aos="fade-up"
-        data-aos-delay="300"
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[45px] gap-x-[60px] mt-10 px-[20px] md:px-[70px] h-[680px] max-w-[1452px] w-full"
+        data-aos-delay="900"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[45px] gap-x-[60px] mt-10 px-[20px] md:px-[70px]  max-w-fit w-full"
       >
         <Card
           icon={book}
