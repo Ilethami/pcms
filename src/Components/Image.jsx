@@ -1,14 +1,12 @@
-export default function Image({ image, width, height }) {
+export default function Image({ image, className = "" }) {
   return (
     <div
-      className="relative flex items-center justify-center"
-      style={{ width, height }}
+      className={`relative flex items-center justify-center ${className}`}
     >
-      {/* Image */}
       <img
         src={image}
         alt=""
-        className="absolute w-full h-full object-contain"
+        className="w-full h-full object-contain"
       />
     </div>
   );

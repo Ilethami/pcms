@@ -21,9 +21,9 @@ export default function Media() {
       </p>
 
       {/* Device Mockups */}
-      <div className="w-full flex flex-row justify-center items-center overflow-hidden ">
+      <div className="w-full h-full flex flex-row justify-center items-center overflow-visible ">
         {/* Phone */}
-        <div className="translate-x-[350px] translate-y-[40px] z-20">
+        <div className="translate-x-6/3 translate-y-[40px] z-20">
           <Image image={phoneimg} width="190px" height="362px" />
         </div>
         {/* Laptop */}

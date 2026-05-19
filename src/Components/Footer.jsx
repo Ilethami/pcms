@@ -3,16 +3,16 @@ import fimg from "../assets/footer.png";
 export default function Footer() {
   return (
     <>
-      <div className="relative w-full h-[574px] overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
         {/* Background Image */}
         <img
           src={fimg}
           alt="Footer"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="flex flex-col justify-between w-full h-full">
-          <div className="flex  flex-col justify-between items-start  justify-self-stretch">
-            <div className="items-center gap-4 flex-row flex ">
+        <div className="grid w-full h-full pt-5 px-6 md:px-10 pb-8 gap-y-10 md:gap-y-8 gap-x-10 md:gap-x-28 grid-cols-1 md:grid-cols-2">
+          <div className="flex  flex-col col-start-1 row-start-1 gap-7 items-stretch  justify-self-stretch">
+            <div className="items-center gap-4 flex-row flex  ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="70"
@@ -29,8 +29,8 @@ export default function Footer() {
                 PickleCourt
               </p>
             </div>
-            <div className="flex  pl-5 flex-col items-start gap-5 shrink-0 self-stretch">
-              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-[415px]">
+            <div className="flex  pl-5 flex-col items-start gap-5 shrink-0 self-stretch ">
+              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-full max-w-md">
                 Smart Booking System for seamless court reservations
                 and management.
               </p>
@@ -86,8 +86,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex-row flex">
-            <div className="">
+          {/* bot-left */}
+          <div className="flex-row flex self-baseline  col-start-1 row-start-2 justify-self-stretch">
+            <div className="flex flex-col pt-[50px] items-center gap-[10px] w-8 px-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -137,22 +138,49 @@ export default function Footer() {
                 />
               </svg>
             </div>
-            <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-[362px] h-[200px]">
-              <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-bold leading-[40px]">
-                CONTACT
-              </span>
-              <br />
-              <div className="pl-5">
-                Bonifacio Street, near UIC School <br />
-                +63 912 345 6789
-                <br />
-                <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] underline ">
-                  support@picklecourt.com
+            <div className="flex -translate-x-5 items-center justify-end col-start-2  row-start-1 justify-self-stretch">
+              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-full max-w-sm ">
+                <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-bold leading-[40px] -ml-3.5">
+                  CONTACT
                 </span>
                 <br />
-                Mon – Sun | 8:00 AM – 10:00 PM
+                <div className="pl-5">
+                  Bonifacio Street, near UIC School <br />
+                  +63 912 345 6789
+                  <br />
+                  <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] underline ">
+                    support@picklecourt.com
+                  </span>
+                  <br />
+                  Mon – Sun | 8:00 AM – 10:00 PM
+                </div>
+              </p>
+            </div>
+          </div>
+          {/* top right */}
+          <div className="flex flex-col gap-9 ">
+            <div className="self-stretch">
+              <div className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-semibold not-italic leading-[40px]">
+                <p>Privacy Policy</p>
+                <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal not-italicleading-[40px]">
+                  Your data and transactions are securely protected.
+                </p>
               </div>
-            </p>
+              <br />
+              <div className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-semibold not-italic leading-[40px]">
+                <p>Terms & Conditions</p>
+                <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal not-italicleading-[40px]">
+                  Users must follow booking and payment guidelines
+                  when using PickleCourt.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal not-italic leading-[40px]">
+                Bonifacio Street, LAP IT © 2026 LAP IT. All rights
+                reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
