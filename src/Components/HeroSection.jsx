@@ -108,7 +108,7 @@ export default function Hero() {
         <div className="ml-4 sm:ml-10 md:ml-[65px] max-w-[90%] sm:max-w-[600px] md:max-w-[847px] flex flex-col gap-6 sm:gap-10 md:gap-[43px] z-10">
           <h1
             data-aos="fade-up"
-            className="text-[#FFFEFC] font-['Poppins'] text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]"
+            className="text-[#FFFEFC] font-Poppins text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]"
           >
             Manage Pickleball Courts Easily and Efficiently
           </h1>

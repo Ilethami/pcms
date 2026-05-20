@@ -23,7 +23,7 @@ export default function Hero() {
             data-aos="fade-up"
             className="flex flex-col gap-5 items-center"
           >
-            <p className="text-[#215B63] font-['Castoro'] text-[30px] font-normal leading-[40px]">
+            <p className="text-[#215B63] font-poppins text-[30px] font-semibold leading-[40px]">
               HOW IT WORKS
             </p>
             <img src={step} alt="Order Vector" />

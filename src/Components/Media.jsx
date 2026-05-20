@@ -27,7 +27,7 @@ export default function Hero() {
       <p
         data-aos="fade-up"
         data-aos-delay="300"
-        className="text-[#215B63] font-['Bona-Nova'] text-[24px] sm:text-[30px] md:text-[36px] text-center font-bold leading-[40px]"
+        className="text-[#215B63] font-poppins text-[24px] sm:text-[30px] md:text-[36px] text-center font-bold leading-[40px]"
       >
         See PickleCourt in Action
       </p>
@@ -35,7 +35,7 @@ export default function Hero() {
       <p
         data-aos="fade-up"
         data-aos-delay="600"
-        className="text-[#215B63] font-['Bona-Nova'] text-center text-[16px] sm:text-[18px] md:text-[20px] font-bold leading-[32px] md:leading-[40px]"
+        className="text-[#215B63] font-poppins text-center text-[16px] sm:text-[18px] md:text-[20px] font-bold leading-[32px] md:leading-[40px]"
       >
         A seamless experience for admins and staff to manage
         facilities efficiently

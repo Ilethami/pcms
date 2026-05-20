@@ -33,7 +33,7 @@ export default function Hero() {
         <p
           data-aos="fade-up"
           data-aos-delay="300"
-          className="text-[#215B63] font-['Castoro'] text-[34px] font-normal leading-[40px] text-center"
+          className="text-[#215B63] font-poppins text-[34px] font-normal leading-[40px] text-center"
         >
           Everything you need to run your facility
         </p>
@@ -41,7 +41,7 @@ export default function Hero() {
         <p
           data-aos="fade-up"
           data-aos-delay="600"
-          className="text-[#55A078] font-['Castoro'] text-[18px] font-normal leading-[40px] max-w-[500px] text-center"
+          className="text-[#55A078] font-poppins text-[18px] font-normal leading-[40px] max-w-[500px] text-center"
         >
           Powerful tools to save time, increase bookings and deliver a
           better experience for your members
