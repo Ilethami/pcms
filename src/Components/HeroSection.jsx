@@ -1,10 +1,20 @@
 import heroimg from "../assets/hdimg.png";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image */}
-      <img
+      <img 
         src={heroimg}
         alt="Hero"
         className="w-full h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] object-cover block"
@@ -15,6 +25,7 @@ export default function Hero() {
         {/* LEFT SIDE */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* LOGO SVG (your original) */}
+          <a href="/" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -28,41 +39,74 @@ export default function Hero() {
               fill="#215B63"
             />
           </svg>
+          </a>
 
-          <p className="text-[#1F6F5F] font-['Poppins'] text-[18px] sm:text-[22px] md:text-[26px] font-semibold">
+          <p className="text-[#1F6F5F] font-poppins text-[20px] sm:text-[24px] md:text-[28px] font-semibold">
             PickleCourt
           </p>
         </div>
 
         {/* RIGHT SIDE BUTTONS */}
-        <div className="flex gap-2 sm:gap-3 md:gap-4">
-          <button
-            className="rounded-[36px] border-[3px] border-[#67C090] bg-white text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]
-  shadow-md transition-all duration-200
-  hover:border-white hover:bg-[#67C090] hover:text-white hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
-          >
+        <div className=" hidden md:flex gap-2 sm:gap-3 md:gap-4">
+          <button className="rounded-[36px] border-[3px] border-[#67C090] hover:border-white hover:bg-[#4ea977] hover:text-white bg-white shadow-md text-[#67C090] transition-colors duration-300 text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
             Register
           </button>
 
-          <button
-            className="rounded-[36px] border-[3px] border-[#FFFEFC] bg-[#67C090] text-white
-  text-[14px] sm:text-[16px] md:text-[20px]
-  w-[90px] sm:w-[105px] md:w-[120px]
-  h-[36px] sm:h-[40px] md:h-[44px]
-  shadow-md transition-all duration-200
-
-   hover:border-[#67C090] hover:bg-white hover:text-[#67C090]
-  hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
-          >
+          <button className="rounded-[36px] border-[3px] border-[#FFFEFC] hover:border-[#4ea977] hover:bg-white hover:text-[#4ea977] bg-[#67C090] transition-colors duration-300 shadow-md text-white text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
             Login
           </button>
         </div>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)} 
+          className="flex flex-col md:hidden cursor-pointer gap-1"
+        >
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+        </button>
+
+        <ul
+            className={`
+              absolute top-[80px] right-0 w-full bg-pcms
+              flex flex-col items-center gap-4
+              overflow-hidden
+              transition-all duration-300 ease-in-out
+              md:hidden
+
+              ${
+                menuOpen
+                  ? "max-h-[300px] opacity-100 py-4"
+                  : "max-h-0 opacity-0 py-0"
+              }
+            `}
+          >
+          <li>
+  <a
+    href="#"
+    className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
+  >
+    Login
+  </a>
+</li>
+
+<li>
+  <a
+    href="#"
+    className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
+  >
+    Sign Up
+  </a>
+</li>
+</ul>
       </nav>
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 flex items-center">
         <div className="ml-4 sm:ml-10 md:ml-[65px] max-w-[90%] sm:max-w-[600px] md:max-w-[847px] flex flex-col gap-6 sm:gap-10 md:gap-[43px] z-10">
-          <h1 className="text-[#FFFEFC] font-['Poppins'] text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]">
+          <h1 data-aos="fade-up" className="text-[#FFFEFC] font-poppins text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]">
             Manage Pickleball Courts Easily and Efficiently
           </h1>
 
@@ -72,7 +116,7 @@ export default function Hero() {
           </p>
 
           {/* BUTTON WITH ARROW SVG */}
-          <button className="flex items-center justify-between w-[160px] sm:w-[180px] md:w-[204px] h-[44px] sm:h-[48px] md:h-[51px] px-[20px] sm:px-[24px] md:px-[28px] rounded-full bg-[#67C090] border border-black/20 shadow-md">
+          <button className="flex items-center justify-between w-[160px] sm:w-[180px] md:w-[204px] h-[44px] sm:h-[48px] md:h-[51px] px-[20px] sm:px-[24px] md:px-[28px] rounded-full bg-[#67C090] border border-black/20 shadow-md hover:scale-106 hover:translate-y-[-2px] transition-transform duration-300 hover:bg-[#4ea977]">
             <span className="text-white text-[14px] sm:text-[16px] md:text-[20px] font-['Poppins] font-regular">
               Learn More
             </span>
