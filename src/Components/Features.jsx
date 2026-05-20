@@ -24,9 +24,11 @@ export default function Hero() {
     >
       {/* HEADER */}
       <div className="flex flex-col justify-center items-center gap-4 py-7">
-        <div className="flex bg-[#BCEAB7] px-4 py-4 rounded-3xl text-[#215B63] font-poppins text-[15px] font-bold text-center leading-normal text-transform uppercase">
-        Features
-      </div>
+        <div className="flex items-center justify-center w-fit h-fit rounded-[20px] bg-[#BCEAB7] px-6 py-2.5">
+          <p className="text-[#215B63] text-[20px] font-bold font-poppins">
+            Features
+          </p>
+        </div>
 
         <p
           data-aos="fade-up"
