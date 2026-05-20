@@ -25,7 +25,7 @@ export default function Hero() {
       {/* HEADER */}
       <div className="flex flex-col justify-center items-center gap-4 py-7">
         <div className="flex items-center justify-center w-fit h-fit rounded-[20px] bg-[#BCEAB7] px-6 py-2.5">
-          <p className="text-[#215B63] text-[20px] font-bold font-['Bona-Nova']">
+          <p className="text-[#215B63] text-[20px] font-bold font-poppins">
             Features
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function Hero() {
         <p
           data-aos="fade-up"
           data-aos-delay="300"
-          className="text-[#215B63] font-['Castoro'] text-[34px] font-normal leading-[40px] text-center"
+          className="text-[#215B63] font-poppins text-[34px] font-normal leading-[40px] text-center"
         >
           Everything you need to run your facility
         </p>
@@ -41,7 +41,7 @@ export default function Hero() {
         <p
           data-aos="fade-up"
           data-aos-delay="600"
-          className="text-[#55A078] font-['Castoro'] text-[18px] font-normal leading-[40px] max-w-[500px] text-center"
+          className="text-[#55A078] font-poppins text-[18px] font-normal leading-[40px] max-w-[500px] text-center"
         >
           Powerful tools to save time, increase bookings and deliver a
           better experience for your members

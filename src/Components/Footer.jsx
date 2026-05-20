@@ -25,12 +25,12 @@ export default function Footer() {
                   fill="#FFFEFC"
                 />
               </svg>
-              <p className="text-[#FFFEFC] font-['Poppins'] text-[26px] font-semibold leading-normal ">
+              <p className="text-[#FFFEFC] font-poppins text-[26px] font-semibold leading-normal ">
                 PickleCourt
               </p>
             </div>
             <div className="flex  pl-5 flex-col items-start gap-5 shrink-0 self-stretch ">
-              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-full max-w-md">
+              <p className="text-[#FFFEFC] font-poppins text-[20px] font-normal leading-[40px] w-full max-w-md">
                 Smart Booking System for seamless court reservations
                 and management.
               </p>
@@ -139,8 +139,8 @@ export default function Footer() {
               </svg>
             </div>
             <div className="flex -translate-x-5 items-center justify-end col-start-2  row-start-1 justify-self-stretch">
-              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] w-full max-w-sm ">
-                <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-bold leading-[40px] -ml-3.5">
+              <p className="text-[#FFFEFC] font-poppins text-[20px] font-normal leading-[40px] w-full max-w-sm ">
+                <span className="text-[#FFFEFC] font-poppins text-[20px] font-bold leading-[40px] -ml-3.5">
                   CONTACT
                 </span>
                 <br />
@@ -148,7 +148,7 @@ export default function Footer() {
                   Bonifacio Street, near UIC School <br />
                   +63 912 345 6789
                   <br />
-                  <span className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal leading-[40px] underline ">
+                  <span className="text-[#FFFEFC] font-poppins text-[20px] font-normal leading-[40px] underline ">
                     support@picklecourt.com
                   </span>
                   <br />
@@ -160,23 +160,23 @@ export default function Footer() {
           {/* top right */}
           <div className="flex flex-col gap-9 ">
             <div className="self-stretch">
-              <div className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-semibold not-italic leading-[40px]">
+              <div className="text-[#FFFEFC] font-poppins text-[20px] font-semibold not-italic leading-[40px]">
                 <p>Privacy Policy</p>
-                <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal not-italicleading-[40px]">
+                <p className="text-[#FFFEFC] font-poppins text-[20px] font-normal not-italicleading-[40px]">
                   Your data and transactions are securely protected.
                 </p>
               </div>
               <br />
-              <div className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-semibold not-italic leading-[40px]">
+              <div className="text-[#FFFEFC] font-poppins text-[20px] font-semibold not-italic leading-[40px]">
                 <p>Terms & Conditions</p>
-                <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal not-italicleading-[40px]">
+                <p className="text-[#FFFEFC] font-poppins text-[20px] font-normal not-italicleading-[40px]">
                   Users must follow booking and payment guidelines
                   when using PickleCourt.
                 </p>
               </div>
             </div>
             <div>
-              <p className="text-[#FFFEFC] font-['Poppins'] text-[20px] font-normal not-italic leading-[40px]">
+              <p className="text-[#FFFEFC] font-poppins text-[20px] font-normal not-italic leading-[40px]">
                 Bonifacio Street, LAP IT © 2026 LAP IT. All rights
                 reserved.
               </p>
