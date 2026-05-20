@@ -4,3 +4,7 @@
   --color-pcms: oklch(0.9744 0.0452 142.23) /* #e6ffe3 */;
   --color-icon: oklch(0.9309 0.0591 142.83) /* #d2f3cf */;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+}

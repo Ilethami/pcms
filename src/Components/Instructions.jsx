@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 
+
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
