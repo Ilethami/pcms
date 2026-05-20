@@ -1,7 +1,7 @@
 export default function InText({ title, text }) {
   return (
     <>
-      <div className="flex flex-col max-w-md items-center gap-6">
+      <div className="flex flex-col max-w-md items-center gap-0.5">
         <p className=" text-[#215B63] text-center font-['Poppins'] text-[24px] font-bold leading-[40px] w-fit">
           {title}
         </p>

@@ -1,6 +1,16 @@
 import heroimg from "../assets/hdimg.png";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image */}
@@ -15,19 +25,21 @@ export default function Hero() {
         {/* LEFT SIDE */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* LOGO SVG (your original) */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="70"
-            height="70"
-            viewBox="0 0 70 70"
-            fill="none"
-            className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px]"
-          >
-            <path
-              d="M55.1771 64.1666L38.0417 47.0312C36.632 48.2951 35.0647 49.2187 33.34 49.802C31.6153 50.3853 29.877 50.677 28.125 50.677C26.1806 50.677 24.2974 50.3124 22.4754 49.5833C20.6535 48.8541 19.0124 47.7603 17.5521 46.302L6.46877 35.2916C5.64238 34.4652 5.01044 33.5056 4.57294 32.4128C4.13544 31.3201 3.91669 30.2137 3.91669 29.0937C3.91669 27.9737 4.13544 26.8683 4.57294 25.7774C5.01044 24.6866 5.64238 23.726 6.46877 22.8958L18.0625 11.302C18.8889 10.4756 19.8495 9.84367 20.9442 9.40617C22.0389 8.96867 23.1434 8.74992 24.2575 8.74992C25.3717 8.74992 26.4781 8.96867 27.5767 9.40617C28.6753 9.84367 29.6349 10.4756 30.4554 11.302L41.4659 22.3853C42.9242 23.8437 44.0179 25.4848 44.7471 27.3087C45.4763 29.1326 45.8409 31.0158 45.8409 32.9583C45.8409 34.7083 45.5375 36.4466 44.9309 38.1733C44.3242 39.8999 43.3889 41.4671 42.125 42.8749L59.3334 60.0833L55.1771 64.1666Z"
-              fill="#215B63"
-            />
-          </svg>
+          <a href="/" className="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px]"
+            >
+              <path
+                d="M55.1771 64.1666L38.0417 47.0312C36.632 48.2951 35.0647 49.2187 33.34 49.802C31.6153 50.3853 29.877 50.677 28.125 50.677C26.1806 50.677 24.2974 50.3124 22.4754 49.5833C20.6535 48.8541 19.0124 47.7603 17.5521 46.302L6.46877 35.2916C5.64238 34.4652 5.01044 33.5056 4.57294 32.4128C4.13544 31.3201 3.91669 30.2137 3.91669 29.0937C3.91669 27.9737 4.13544 26.8683 4.57294 25.7774C5.01044 24.6866 5.64238 23.726 6.46877 22.8958L18.0625 11.302C18.8889 10.4756 19.8495 9.84367 20.9442 9.40617C22.0389 8.96867 23.1434 8.74992 24.2575 8.74992C25.3717 8.74992 26.4781 8.96867 27.5767 9.40617C28.6753 9.84367 29.6349 10.4756 30.4554 11.302L41.4659 22.3853C42.9242 23.8437 44.0179 25.4848 44.7471 27.3087C45.4763 29.1326 45.8409 31.0158 45.8409 32.9583C45.8409 34.7083 45.5375 36.4466 44.9309 38.1733C44.3242 39.8999 43.3889 41.4671 42.125 42.8749L59.3334 60.0833L55.1771 64.1666Z"
+                fill="#215B63"
+              />
+            </svg>
+          </a>
 
           <p className="text-[#1F6F5F] font-['Poppins'] text-[18px] sm:text-[22px] md:text-[26px] font-semibold">
             PickleCourt
@@ -35,34 +47,69 @@ export default function Hero() {
         </div>
 
         {/* RIGHT SIDE BUTTONS */}
-        <div className="flex gap-2 sm:gap-3 md:gap-4">
-          <button
-            className="rounded-[36px] border-[3px] border-[#67C090] bg-white text-[#67C090] text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px]
-  shadow-md transition-all duration-200
-  hover:border-white hover:bg-[#67C090] hover:text-white hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
-          >
+        <div className=" hidden md:flex gap-2 sm:gap-3 md:gap-4">
+          <button className="rounded-[36px] border-[3px] border-[#67C090] hover:border-white hover:bg-[#4ea977] hover:text-white bg-white shadow-md text-[#67C090] transition-colors duration-300 text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300 hover:cursor-pointer">
             Register
           </button>
 
-          <button
-            className="rounded-[36px] border-[3px] border-[#FFFEFC] bg-[#67C090] text-white
-  text-[14px] sm:text-[16px] md:text-[20px]
-  w-[90px] sm:w-[105px] md:w-[120px]
-  h-[36px] sm:h-[40px] md:h-[44px]
-  shadow-md transition-all duration-200
-
-   hover:border-[#67C090] hover:bg-white hover:text-[#67C090]
-  hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"
-          >
+          <button className="rounded-[36px] border-[3px] border-[#FFFEFC] hover:border-[#4ea977] hover:bg-white hover:text-[#4ea977] bg-[#67C090] transition-colors duration-300 shadow-md text-white text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300 hover:cursor-pointer">
             Login
           </button>
         </div>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="flex flex-col md:hidden cursor-pointer gap-1"
+        >
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+          <span className="w-6 h-0.5 bg-[#1F6F5F]"></span>
+        </button>
+
+        <ul
+          className={`
+              absolute top-[80px] right-0 w-full bg-pcms
+              flex flex-col items-center gap-4
+              overflow-hidden
+              transition-all duration-300 ease-in-out
+              md:hidden
+
+              ${
+                menuOpen
+                  ? "max-h-[300px] opacity-100 py-4"
+                  : "max-h-0 opacity-0 py-0"
+              }
+            `}
+        >
+          <li>
+            <a
+              href="#"
+              className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
+            >
+              Login
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              className="text-[#1F6F5F] text-[18px] font-['Poppins'] font-semibold 
+    px-4 py-2 rounded-full hover:bg-[#dcefd7] transition-all duration-300"
+            >
+              Sign Up
+            </a>
+          </li>
+        </ul>
       </nav>
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 flex items-center">
         <div className="ml-4 sm:ml-10 md:ml-[65px] max-w-[90%] sm:max-w-[600px] md:max-w-[847px] flex flex-col gap-6 sm:gap-10 md:gap-[43px] z-10">
-          <h1 className="text-[#FFFEFC] font-['Poppins'] text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]">
+          <h1
+            data-aos="fade-up"
+            className="text-[#FFFEFC] font-['Poppins'] text-[26px] sm:text-[36px] md:text-[50px] font-bold leading-[34px] sm:leading-[50px] md:leading-[65px]"
+          >
             Manage Pickleball Courts Easily and Efficiently
           </h1>
 
@@ -72,7 +119,7 @@ export default function Hero() {
           </p>
 
           {/* BUTTON WITH ARROW SVG */}
-          <button className="flex items-center justify-between w-[160px] sm:w-[180px] md:w-[204px] h-[44px] sm:h-[48px] md:h-[51px] px-[20px] sm:px-[24px] md:px-[28px] rounded-full bg-[#67C090] border border-black/20 shadow-md">
+          <button className="flex items-center justify-between w-[160px] sm:w-[180px] md:w-[204px] h-[44px] sm:h-[48px] md:h-[51px] px-[20px] sm:px-[24px] md:px-[28px] rounded-full bg-[#67C090] border border-black/20 shadow-md hover:scale-106 hover:translate-y-[-2px] transition-transform duration-300 hover:bg-[#4ea977] hover:cursor-pointer">
             <span className="text-white text-[14px] sm:text-[16px] md:text-[20px] font-['Poppins] font-regular">
               Learn More
             </span>
