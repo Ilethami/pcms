@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
@@ -14,15 +14,25 @@ export default function Hero() {
   }, []);
   return (
     <>
-      <div data-aos="fade-up" className="w-full h-fit flex flex-col items-center py-20">
-        <div className="bg-pcms w-fit h-fit py-16 rounded-[100px] px-1 mx-6 shadow-[0_10px_20px_5px_rgba(0,0,0,0.25)]">
-          <div className="flex flex-col gap-5 items-center">
-            <p className="text-[#215B63] font-poppins text-[30px] font-semibold leading-[40px] ">
+      <div
+        data-aos="fade-up"
+        className="w-flex h-fit flex flex-col items-center py-20 "
+      >
+        <div className=" bg-pcms w-fit h-fit py-16 rounded-[100px] px-6 mx-6 shadow-[0px_16px_10px_8px_rgba(0,0,0,0.35)] ">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col gap-5 items-center"
+          >
+            <p className="text-[#215B63] font-['Castoro'] text-[30px] font-normal leading-[40px]">
               HOW IT WORKS
             </p>
             <img src={step} alt="Order Vector" />
           </div>
-          <div data-aos="fade-up" data-aos-delay="300" className="flex flex-wrap items-center content-end pt-10 justify-center gap-2.5">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="flex flex-wrap justify-center items-center content-end pt-10 gap-y-5"
+          >
             <InText
               title={"SIGN UP AND BROWSE"}
               text={

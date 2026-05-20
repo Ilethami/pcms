@@ -1,4 +1,4 @@
-import bell from "../icons/bell.svg";
+import bell from "../icons/Bell.svg";
 import person from "../icons/Person.svg";
 import book from "../icons/Booking.svg";
 import calendar from "../icons/Calendar.svg";
@@ -11,14 +11,17 @@ import "aos/dist/aos.css";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
   }, []);
   return (
-    <div data-aos="fade-up" className="flex flex-col w-full overflow-hidden items-center pt-10">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col w-full overflow-hidden items-center pt-10"
+    >
       {/* HEADER */}
       <div className="flex flex-col justify-center items-center gap-4 py-7">
         <div className="flex items-center justify-center w-fit h-fit rounded-[20px] bg-[#BCEAB7] px-6 py-2.5">
@@ -27,18 +30,30 @@ export default function Hero() {
           </p>
         </div>
 
-        <p data-aos="fade-up" data-aos-delay="300" className="text-[#215B63] font-poppins text-[34px] font-normal leading-[40px] text-center">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="text-[#215B63] font-['Castoro'] text-[34px] font-normal leading-[40px] text-center"
+        >
           Everything you need to run your facility
         </p>
 
-        <p data-aos="fade-up" data-aos-delay="600" className="text-[#55A078] font-poppins text-[18px] font-normal leading-[40px] max-w-[500px] text-center">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="text-[#55A078] font-['Castoro'] text-[18px] font-normal leading-[40px] max-w-[500px] text-center"
+        >
           Powerful tools to save time, increase bookings and deliver a
           better experience for your members
         </p>
       </div>
 
       {/* GRID SECTION */}
-      <div data-aos="fade-up" data-aos-delay="900" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[45px] gap-x-[60px] mt-10 px-[20px] md:px-[70px]  max-w-fit w-full">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="900"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[45px] gap-x-[60px] mt-10 px-[20px] md:px-[70px]  max-w-fit w-full"
+      >
         <Card
           icon={book}
           title="Smart Booking System"
