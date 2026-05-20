@@ -8,7 +8,7 @@ export default function Card({ icon, title, details }) {
       />
 
       <div className="flex flex-col items-center">
-        <p className="text-[#215B63] font-poppins text-[24px] font-bold leading-[40px]">
+        <p className="text-[#215B63] font-poppins text-center text-[24px] font-bold leading-[40px]">
           {title}
         </p>
 
