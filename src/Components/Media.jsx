@@ -20,7 +20,7 @@ export default function Hero() {
       className="flex flex-col w-full items-center gap-6 pt-10 pb-20 overflow-hidden px-4"
     >
       {/* Header */}
-      <div className="w-[160px] bg-[#BCEAB7] px-4 py-4 rounded-3xl text-[#215B63] font-poppins text-[15px] font-bold text-center leading-normal">
+      <div className="w-[170px] bg-[#BCEAB7] px-4 py-4 rounded-3xl text-[#215B63] font-poppins text-[15px] font-bold text-center leading-normal text-transform uppercase">
         System Preview
       </div>
 
