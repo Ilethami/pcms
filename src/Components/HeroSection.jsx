@@ -48,7 +48,7 @@ export default function Hero() {
 
         {/* RIGHT SIDE BUTTONS */}
         <div className=" hidden md:flex gap-2 sm:gap-3 md:gap-4">
-          <button className="rounded-[36px] border-[3px] border-[#67C090] hover:border-white hover:bg-[#4ea977] hover:text-white bg-white shadow-md text-[#67C090] transition-colors duration-300 text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300 hover:cursor-pointer">
+          <button className="rounded-[36px] border-[3px] border-[#FFFEFC] hover:border-[#4ea977] hover:bg-white hover:text-[#4ea977] bg-[#67C090] transition-colors duration-300 shadow-md text-white text-[14px] sm:text-[16px] md:text-[20px] w-[90px] sm:w-[105px] md:w-[120px] h-[36px] sm:h-[40px] md:h-[44px] hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300 hover:cursor-pointer">
             Register
           </button>
 
