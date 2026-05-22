@@ -62,26 +62,83 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex flex-row gap-6">
-        
-        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
-          <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-1493&t=YfJ6YnwmtrbXGBNA-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A1493&show-proto-sidebar=1">
-          Phone
-          </a>
+        {/* Customer */}
+       <div className="flex flex-col gap-6 rounded-2xl bg-purple-300 px-6 items-center pt-3 font-semibold">
+        Customer
+          <div className="flex flex-row gap-6">
+            <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+             <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-1493&t=YfJ6YnwmtrbXGBNA-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A1493&show-proto-sidebar=1">
+            Phone
+              </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+             <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-1404&t=YfJ6YnwmtrbXGBNA-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A1404&show-proto-sidebar=1">
+            Small Phone
+             </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+              <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=534-6408&t=mYWQf4QjZ6RX9Xgt-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=534%3A6408">
+             Desktop
+              </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+            <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-10951&t=YfJ6YnwmtrbXGBNA-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A10951&show-proto-sidebar=1">
+            Tablet
+             </a>
+            </div>
+          </div>
         </div>
-        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
-          <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-1404&t=YfJ6YnwmtrbXGBNA-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A1404&show-proto-sidebar=1">
-          Small Phone
-          </a>
+        {/* Staff */}
+        <div className="flex flex-col gap-6 rounded-2xl bg-purple-300 px-6 items-center pt-3 font-semibold">
+        Staff
+          <div className="flex flex-row gap-6">
+            <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+             <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6550&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=705%3A2336&show-proto-sidebar=1">
+            Phone
+              </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+             <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6550&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=705%3A2247&show-proto-sidebar=1">
+            Small Phone
+             </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+              <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6550&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=516%3A12803&show-proto-sidebar=1">
+             Desktop
+              </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+            <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6550&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=705%3A11073&show-proto-sidebar=1">
+            Tablet
+             </a>
+            </div>
+          </div>
         </div>
-        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
-          <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=534-6408&t=mYWQf4QjZ6RX9Xgt-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=534%3A6408">
-           Desktop
-          </a>
-        </div>
-        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
-         <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-10951&t=YfJ6YnwmtrbXGBNA-1&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A10951&show-proto-sidebar=1">
-          Tablet
-          </a>
+        {/* Admin */}
+        <div className="flex flex-col gap-6 rounded-2xl bg-purple-300 px-6 items-center pt-3 font-semibold">
+        Admin
+          <div className="flex flex-row gap-6">
+            <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+             <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6549&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=contain&content-scaling=fixed&starting-point-node-id=705%3A3960&show-proto-sidebar=1">
+            Phone
+              </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+             <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6549&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=contain&content-scaling=fixed&starting-point-node-id=705%3A3871&show-proto-sidebar=1">
+            Small Phone
+             </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+              <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6549&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=contain&content-scaling=fixed&starting-point-node-id=424%3A10902&show-proto-sidebar=1">
+             Desktop
+              </a>
+           </div>
+           <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+            <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=424-6549&p=f&t=5EHIRvCdhIQq8mDm-0&scaling=contain&content-scaling=fixed&starting-point-node-id=703%3A2300&show-proto-sidebar=1">
+            Tablet
+             </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
