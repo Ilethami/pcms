@@ -61,6 +61,7 @@ export default function Hero() {
           <Image image={tabimg} width="550px" height="370px" />
         </div>
       </div>
+      {/* Remove this div if links to Figma Prototype no longer needed */}
       <div className="flex flex-row gap-6">
         {/* Customer */}
        <div className="flex flex-col gap-6 rounded-2xl bg-purple-300 px-6 items-center pt-3 font-semibold">
@@ -140,7 +141,8 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+      {/* Until here to delete links to figma prot. */}
     </div>
   );
 }
