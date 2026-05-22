@@ -61,6 +61,19 @@ export default function Hero() {
           <Image image={tabimg} width="550px" height="370px" />
         </div>
       </div>
+      <div className="flex flex-row gap-6">
+        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+          <a href="figma.com/proto/m5EIX6lGYF0GMlKl4O5aSP/Pickleball-Court-Management-System?node-id=705-1404&t=p642Rj7ORh4BDZQ2-0&scaling=min-zoom&content-scaling=fixed&page-id=534%3A6407&starting-point-node-id=705%3A1404&show-proto-sidebar=1&fuid=1230855733563728487 " target="_blank" rel="noopener noreferrer">
+          Phone
+          </a>
+        </div>
+        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+          Desktop
+        </div>
+        <div className="text-[#4E9372] text-center font-poppins text-[20px] font-normal leading-[40px]" >
+          Tablet
+        </div>
+      </div>
     </div>
   );
 }
